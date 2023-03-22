@@ -1,0 +1,35 @@
+server.port : 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto:  update
+  application:
+    name: AR-API
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysqldb:3306/sbms
+    username: root
+    password: root
+
+# AWS RDS is Not Free Please Remove .. 
+#    url: jdbc:mysql://database-1.chxjor2revkx.ap-south-1.rds.amazonaws.com:3306/arapidb
+#    username: admin
+#    password: Whyso$erious10
+    
+  boot:
+    admin:
+      client:
+          url: http://localhost:1111/
+ #Includes all acturators. 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+#custom messages
+ar:
+ messages:        
+  welcome : Welcome To AR-Module
