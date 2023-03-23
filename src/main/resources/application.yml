@@ -18,10 +18,10 @@ spring:
 #    username: admin
 #    password: Whyso$erious10
     
-  boot:
-    admin:
-      client:
-          url: http://localhost:1111/
+#  boot:
+#    admin:
+#      client:
+#          url: http://localhost:1111/
  #Includes all acturators. 
 management:
   endpoints:
