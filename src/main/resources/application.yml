@@ -33,3 +33,8 @@ management:
 ar:
  messages:        
   welcome : Welcome To AR-Module
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://3.109.60.115:8761/eureka/ 
